@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package foo.bar;
+option objc_class_prefix = "SUN";
+
+message RecordItem {
+  string data = 1;
+}
+
+message Record{
+    repeated RecordItem obj = 1;
+}
+
